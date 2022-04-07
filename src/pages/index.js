@@ -141,7 +141,7 @@ function IndexPage() {
             title={"Playoff results"}
             supportingTitle={"round of 16 to final"}
             resetHandler={onResimulatePlayOffs}
-            resetTitle="Reset playoffs"
+            resetTitle="Resimulate playoffs"
           ></SectionHeading>
         }
         <Brackets

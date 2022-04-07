@@ -4,6 +4,7 @@ const tailwindConfig = require("./tailwind.config.js");
 const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
+  pathPrefix: "/worldcup2022-simulator",
   siteMetadata: {
     title: `Gatsby Starter Tailwind`,
     description: `Gatsby starter styled with Tailwind`,
