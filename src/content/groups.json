@@ -1,0 +1,210 @@
+[
+  {
+    "group": "A",
+    "teams": [
+      {
+        "name": "Qatar",
+        "code": "QA",
+        "placement": 0
+      },
+      {
+        "name": "Netherlands",
+        "code": "NL",
+        "placement": 0
+      },
+      {
+        "name": "Senegal",
+        "code": "SN",
+        "placement": 0
+      },
+      {
+        "name": "Ecuador",
+        "code": "EC",
+        "placement": 0
+      }
+
+    ]
+  },
+  {
+    "group": "B",
+    "teams": [
+      {
+        "name": "England",
+        "code": "GB",
+        "placement": 0
+      },
+      {
+        "name": "United States",
+        "code": "US",
+        "placement": 0
+      },
+      {
+        "name": "Iran",
+        "code": "IR",
+        "placement": 0
+      },
+      {
+        "name": "Ukraine",
+        "code": "UA",
+        "placement": 0
+      }
+
+    ]
+  },
+  {
+    "group": "C",
+    "teams": [
+      {
+        "name": "Argentina",
+        "code": "AR",
+        "placement": 0
+      },
+      {
+        "name": "Mexico",
+        "code": "MX",
+        "placement": 0
+      },
+      {
+        "name": "Poland",
+        "code": "PL",
+        "placement": 0
+      },
+      {
+        "name": "Saudi Arabia",
+        "code": "SA",
+        "placement": 0
+      }
+
+    ]
+  },
+  {
+    "group": "D",
+    "teams": [
+      {
+        "name": "France",
+        "code": "FR",
+        "placement": 0
+      },
+      {
+        "name": "Denmark",
+        "code": "DK",
+        "placement": 0
+      },
+      {
+        "name": "Tunisia",
+        "code": "TN",
+        "placement": 0
+      },
+      {
+        "name": "Peru",
+        "code": "PE",
+        "placement": 0
+      }
+
+    ]
+  },
+  {
+    "group": "E",
+    "teams": [
+      {
+        "name": "Spain",
+        "code": "ES",
+        "placement": 0
+      },
+      {
+        "name": "Germany",
+        "code": "DE",
+        "placement": 0
+      },
+      {
+        "name": "Japan",
+        "code": "JP",
+        "placement": 0
+      },
+      {
+        "name": "New Zealand",
+        "code": "NZ",
+        "placement": 0
+      }
+
+    ]
+  },
+  {
+    "group": "F",
+    "teams": [
+      {
+        "name": "Belgium",
+        "code": "BE",
+        "placement": 0
+      },
+      {
+        "name": "Croatia",
+        "code": "HR",
+        "placement": 0
+      },
+      {
+        "name": "Morocco",
+        "code": "MA",
+        "placement": 0
+      },
+      {
+        "name": "Canada",
+        "code": "CA",
+        "placement": 0
+      }
+
+    ]
+  },
+  {
+    "group": "G",
+    "teams": [
+      {
+        "name": "Brazil",
+        "code": "BR",
+        "placement": 0
+      },
+      {
+        "name": "Switzerland",
+        "code": "CH",
+        "placement": 0
+      },
+      {
+        "name": "Serbia",
+        "code": "RS",
+        "placement": 0
+      },
+      {
+        "name": "Cameroon",
+        "code": "CM",
+        "placement": 0
+      }
+
+    ]
+  },
+  {
+    "group": "H",
+    "teams": [
+      {
+        "name": "Portugal",
+        "code": "PT",
+        "placement": 0
+      },
+      {
+        "name": "Uruguay",
+        "code": "UY",
+        "placement": 0
+      },
+      {
+        "name": "South Korea",
+        "code": "KR",
+        "placement": 0
+      },
+      {
+        "name": "Ghana",
+        "code": "GH",
+        "placement": 0
+      }
+
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flip {
+  transform: rotate(180deg);
+  transform-box: fill-box;
+  transform-origin: center;
+  text-anchor: end;
+}
+
+.highlight {
+  fill: #f3f4f6 !important;
+}
