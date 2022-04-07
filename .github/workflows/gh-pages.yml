@@ -7,25 +7,18 @@ on:
   pull_request:
 
 jobs:
-  build:
+  use-actions:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
-
-   steps:
+    steps:
       - uses: actions/checkout@v2
 
       - uses: actions/setup-node@v1
 
         with:
-          node-version: '15.8.0'
-      -
-        name: Install repo dependencies
+          node-version: "15.8.0"
+      - name: Install repo dependencies
         run: npm install
-      -
-        name: Build and deploy
+      - name: Build and deploy
         run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
