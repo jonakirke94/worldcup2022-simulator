@@ -4,7 +4,7 @@ on:
   push:
     branches:
       # Set a branch name to trigger deployment
-      - main
+      - Main
   pull_request:
 
 jobs:
