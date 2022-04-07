@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import { TournamentSimulator } from "../../lib/simulators/tournamentSimulator";
+import { TournamentSimulator } from "../lib/simulators/tournamentSimulator";
 
-import { BracketRenderer } from "../../lib/bracketRenderer";
+import { BracketRenderer } from "../lib/bracketRenderer";
 
 import Layout from "../components/layout";
 import BaseAlert from "../components/base/baseAlert";
