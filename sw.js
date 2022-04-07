@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-38edadca7cff6fb8957a.js"
+    "url": "webpack-runtime-04eff05cd6cb15b3f6a4.js"
   },
   {
     "url": "framework-9d52e1b2288b8f7d4b8c.js"
@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "styles-9411612e31e4f14527d1.js"
   },
   {
-    "url": "app-a5ad84082557df609846.js"
+    "url": "app-fa5af8acce66ea4e0d5d.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "0067cd99a89a07f045a2f457fd0f5ff9"
+    "revision": "177ceaf66f94d3bce3c4d34d6545dd89"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-19245c8506e49b502b12.js"
@@ -54,14 +54,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "7d472cb405c792373d30da35ecbf76f8"
+    "revision": "b3a4408b83492693f819f6498f3e8d38"
   },
   {
     "url": "polyfill-8296ab92a56f464716e4.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "29d15967b00d1a135038cbf498d706b9"
+    "revision": "f14e2ea434451545118e226861ebbe95"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -148,12 +148,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/worldcup2022-simulator`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-a5ad84082557df609846.js`))) {
+  if (!resources || !(await caches.match(`/worldcup2022-simulator/app-fa5af8acce66ea4e0d5d.js`))) {
     return await fetch(event.request)
   }
 
@@ -166,7 +166,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/worldcup2022-simulator/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
