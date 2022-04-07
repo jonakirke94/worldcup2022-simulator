@@ -1,25 +1,17 @@
-name: GitHub Pages
+name: Gatsby Publish
 
 on:
   push:
     branches:
-      # Set a branch name to trigger deployment
       - Main
-  pull_request:
 
 jobs:
-  deploy:
-    runs-on: ubuntu-20.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v1
+      - uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
-
-      - name: Build
-        run: gatsby build --prefix-paths
-
-      - name: Deploy
-        run: gh-pages -d public
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-branch: gh-pages
+          gatsby-args: --prefix-paths
