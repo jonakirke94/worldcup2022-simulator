@@ -24,8 +24,8 @@ jobs:
       - name: Dependencies
         run: npm install
       - name: setup git config
-      - run: |
-          git config --global user.email "jonakirke94@gmail.com"
+        run: |
+          git config --global user.email "jonakirke94@gmail.com" 
           git config --global user.name "Jonathan"
       - name: Build and deploy
         run: npm run deploy
