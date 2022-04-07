@@ -18,6 +18,10 @@ jobs:
           node-version: "15.8.0"
       - name: Install repo dependencies
         run: npm install -legacy-peer-deps
+      - name: setup git config
+        run: |
+          git config --global user.email "jonakirke94@gmail.com"
+          git config --global user.name "Jonathan"
       - name: Build and deploy
         run: npm run deploy
         env:
